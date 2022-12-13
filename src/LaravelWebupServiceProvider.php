@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace webup\LaravelWebup;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use webup\LaravelWebup\Commands\LaravelWebupCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelWebupServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-webup')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel-webup_table')
+            ->hasCommand(LaravelWebupCommand::class);
     }
 }

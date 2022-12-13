@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace webup\LaravelWebup\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelWebupCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-webup';
 
     public $description = 'My command';
 
